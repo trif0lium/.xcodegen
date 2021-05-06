@@ -1,0 +1,19 @@
+name: Template
+options:
+  bundleIdPrefix: moe.hutao
+targets:
+  TemplateApp:
+    type: application
+    platform: iOS
+    deploymentTarget: "14.0"
+    sources: [TemplateApp]
+    info:
+      path: TemplateApp/Info.plist
+      properties:
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+          UISceneConfigurations:
+            UIWindowSceneSessionRoleApplication:
+              - UILaunchStoryboardName: LaunchScreen
+                UISceneConfigurationName: Default Configuration
+                UISceneDelegateClassName: $(PRODUCT_MODULE_NAME).SceneDelegate
